@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Delivery - The Wash House</title>
+</head>
+<body>
+    <h2>Track Your Laundry</h2>
+    <form action="/track" method="post">
+        <label>Enter your tracking code:</label><br>
+        <input type="text" name="code" required><br><br>
+        <input type="submit" value="Track">
+    </form>
+
+    {% if status %}
+        <h3>Status: {{ status }}</h3>
+    {% elif not_found %}
+        <h3 style="color:red;">Tracking code not found.</h3>
+    {% endif %}
+</body>
+</html>
+

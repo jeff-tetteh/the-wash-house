@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Wash House</title>
+    <style>
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo" class="logo">
+        <h1>Welcome to The Wash House</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/services">Services</a> |
+            <a href="/contact">Contact</a> |
+            <a href="/booking">Book Now</a> |
+            <a href="/track">Track Delivery</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>We offer fast and affordable laundry services. Book now or track your delivery!</p>
+    </main>
+</body>
+</html>
+

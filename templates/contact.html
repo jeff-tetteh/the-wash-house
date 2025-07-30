@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - The Wash House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077cc;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo" class="logo" style="max-width: 200px;">
+        <h1>The Wash House</h1>
+        <p>Fa bra k3k3 y3b3 si</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> thewashhouse@gmail.com</p>
+        <p><strong>Phone:</strong> +233 5948 13923</p>
+        <p><strong>Location:</strong> Gaza, KNUST Campus, Kumasi</p>
+    </div>
+
+    <footer>
+        &copy; 2025 The Wash House | Follow us @thewashhouse
+    </footer>
+</body>
+</html>
+
