@@ -2,4 +2,5 @@ flask
 gunicorn
 twilio
 numpy==1.24.4
+python-dotenv
 
